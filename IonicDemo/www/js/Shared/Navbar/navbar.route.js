@@ -19,6 +19,16 @@
 
     // Each tab has its own nav history stack:
 
+    .state('tab.main', {
+        url: '/main',
+        views: {
+            'tab-main': {
+                templateUrl: 'templates/tab-main.html',
+                controller: 'ChatsCtrl'
+            }
+        }
+    })
+
     .state('tab.dash', {
         url: '/dash',
         views: {
@@ -29,8 +39,8 @@
         }
     })
 
-    .state('tab.chats', {
-        url: '/chats',
+    .state('tab.sms', {
+        url: '/sms',
         views: {
             'tab-chats': {
                 templateUrl: 'templates/tab-chats.html',
@@ -59,7 +69,7 @@
     });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/tab/dash');
+    $urlRouterProvider.otherwise('/tab/main');
 
 });
 

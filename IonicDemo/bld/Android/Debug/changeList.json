@@ -456,7 +456,9 @@
     "www\\lib\\ionic\\scss\\_radio.scss",
     "tsd.json",
     "plugins\\ionic-plugin-keyboard\\src\\blackberry10\\native\\public\\json_internalmap.inl",
-    "plugins\\cordova-plugin-splashscreen\\plugin.xml"
+    "plugins\\cordova-plugin-splashscreen\\plugin.xml",
+    "www\\templates\\tab-main.html",
+    "www\\js\\shared\\navbar\\navbar.route.js"
   ],
   "deletedFilesIos": [
     "www\\lib\\angular-sanitize\\_Chutzpah.c41844c0352e8f384ae15fc3e41f8ca6.test.html",
@@ -467,11 +469,14 @@
     "www\\lib\\ionic\\js\\_Chutzpah.ab6863345fa74868e2ebef9a43277566.test.html",
     "plugins\\cordova-plugin-statusbar\\tests\\_Chutzpah.a9e2e50c14c7f47078685592df3acb76.test.html",
     "ng-app\\.gulp-tsc-tmp-1151024-8648-1qfmvz9.ts",
-    "gulp-tsc-tmp-1151024-8648-1bzb9ly\\tscArguments"
+    "gulp-tsc-tmp-1151024-8648-1bzb9ly\\tscArguments",
+    "www\\templates\\tab-chats - Copy.html"
   ],
   "addedPluginsIos": [],
   "deletedPluginsIos": [],
-  "changedFiles": [],
+  "changedFiles": [
+    "www\\js\\shared\\navbar\\navbar.route.js"
+  ],
   "deletedFiles": [],
   "addedPlugins": [],
   "deletedPlugins": []
