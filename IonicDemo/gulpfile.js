@@ -1,4 +1,4 @@
-/// <binding ProjectOpened='compile' />
+/// <binding BeforeBuild='compile' ProjectOpened='compile' />
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var bower = require('bower');
