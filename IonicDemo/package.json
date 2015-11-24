@@ -14,7 +14,8 @@
     "gulp-inject": "^3.0.0",
     "gulp-util": "^2.2.14",
     "shelljs": "^0.3.0",
-    "gulp-tsc": "^1.1.4"
+    "gulp-tsc": "^1.1.4",
+    "gulp-angular-filesort": "^1.1.1"
   },
   "cordovaPlugins": [
     "cordova-plugin-device",

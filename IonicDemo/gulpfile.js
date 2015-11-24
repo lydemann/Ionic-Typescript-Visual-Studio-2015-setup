@@ -9,12 +9,12 @@ var rename = require('gulp-rename');
 var sh = require('shelljs');
 var inject = require('gulp-inject');
 var typescript = require('gulp-tsc');
+var angularFilesort = require('gulp-angular-filesort');
 
 var paths = {
     sass: ['./scss/**/*.scss'],
     javascript: [
     './www/**/*.js',
-    '!./www/js/app.module.js',
     '!./www/lib/**'
     ],
     css: [
@@ -38,8 +38,8 @@ gulp.task('default', ['sass', 'index']);
 gulp.task('index', function () {
     return gulp.src('./www/index.html')
       .pipe(inject(
-        gulp.src(paths.javascript,
-          { read: false }), { relative: true }))
+        gulp.src(paths.javascript).pipe(angularFilesort()),
+          { relative: true }))
       .pipe(gulp.dest('./www'))
       .pipe(inject(
         gulp.src(paths.css,
