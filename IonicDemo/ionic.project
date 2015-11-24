@@ -1,0 +1,7 @@
+{
+  "name": "IonicDemo",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "index",
+    "watch"]
+}
