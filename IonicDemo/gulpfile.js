@@ -1,4 +1,4 @@
-/// <binding BeforeBuild='compile' ProjectOpened='compile' />
+/// <binding ProjectOpened='watch' />
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var bower = require('bower');
@@ -14,26 +14,23 @@ var angularFilesort = require('gulp-angular-filesort');
 var paths = {
     sass: ['./scss/**/*.scss'],
     javascript: [
-    './www/**/*.js',
-    '!./www/lib/**'
+        './www/**/*.js',
+        '!./www/lib/**'
     ],
     css: [
-    './www/**/*.css',
-    '!./www/css/ionic.app*.css',
-    '!./www/lib/**'
+        './www/**/*.css',
+        '!./www/css/ionic.app*.css',
+        '!./www/lib/**'
     ],
     typescript: [
-    './ng-app/**/.ts'
+        './scripts/**/*.ts'
     ]
 };
 
-gulp.task('compile', function () {
-    gulp.src(['./ng-app/**/*.ts'])
-        .pipe(typescript())
-        .pipe(gulp.dest('./www/js/'));
-});
 
-gulp.task('default', ['sass', 'index']);
+
+gulp.task('default', ['sass', "compile" ,'index', 'watch']);
+
 
 gulp.task('index', function () {
     return gulp.src('./www/index.html')
@@ -58,6 +55,12 @@ gulp.task('sass', function (done) {
       .pipe(rename({ extname: '.min.css' }))
       .pipe(gulp.dest('./www/css/'))
       .on('end', done);
+});
+
+gulp.task('compile', function () {
+    gulp.src(['./scripts/**/*.ts'])
+        .pipe(typescript())
+        .pipe(gulp.dest('./www/js/'));
 });
 
 gulp.task('watch', function () {
