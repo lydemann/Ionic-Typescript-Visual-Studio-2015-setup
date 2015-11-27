@@ -30,7 +30,7 @@
       "commit": "c50b111ded0a3a18b87b5abffea3150d6aca94da"
     },
     "angularjs/angular.d.ts": {
-      "commit": "c50b111ded0a3a18b87b5abffea3150d6aca94da"
+      "commit": "fb2b3b1e068c9ff7d8f9b0851c08d37d96c95c38"
     },
     "cordova/cordova.d.ts": {
       "commit": "ba424f7ee39717d51c17699a09ac8df312a7e9a1"
@@ -96,7 +96,7 @@
       "commit": "ba424f7ee39717d51c17699a09ac8df312a7e9a1"
     },
     "jquery/jquery.d.ts": {
-      "commit": "ba424f7ee39717d51c17699a09ac8df312a7e9a1"
+      "commit": "fb2b3b1e068c9ff7d8f9b0851c08d37d96c95c38"
     },
     "through2/through2.d.ts": {
       "commit": "ba424f7ee39717d51c17699a09ac8df312a7e9a1"
